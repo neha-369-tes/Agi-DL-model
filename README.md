@@ -14,8 +14,20 @@ A high-performance emotion detection system optimized for Google Colab with sign
 ## 🛠️ Setup Instructions
 
 ### 1. Install Dependencies
+
+**Option A: Minimal Installation (Recommended)**
 ```bash
-pip install -r requirements.txt
+pip install -r requirements_minimal.txt
+```
+
+**Option B: Full Installation (with benchmarking tools)**
+```bash
+pip install -r requirements_full.txt
+```
+
+**Option C: Manual Installation**
+```bash
+pip install tensorflow pandas numpy scikit-learn matplotlib seaborn scipy
 ```
 
 ### 2. Prepare Data Files
@@ -24,8 +36,20 @@ Ensure you have the following CSV files in the project directory:
 - `emotionstxt.csv` - Text emotion data with 'text' and 'label' columns
 
 ### 3. Run the Optimized System
-```python
+```bash
 python optimized_emotion_detection.py
+```
+
+### 4. Run Performance Benchmark (Optional)
+
+**Simple Benchmark (no extra dependencies)**
+```bash
+python simple_benchmark.py
+```
+
+**Full Benchmark (requires psutil and memory-profiler)**
+```bash
+python performance_benchmark.py
 ```
 
 ## 📊 Optimization Details
